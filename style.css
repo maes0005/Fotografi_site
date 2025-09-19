@@ -1,0 +1,82 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0.3rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* RESET SLUT*/
+
+@media (width>=500px) {
+  /* OVERLAY */
+  .grid_1-1-1-1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+    gap: 10px;
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(139, 51, 51, 0.6);
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.8rem;
+    font-family: "Gurajada", sans-serif;
+  }
+
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  /* OVERLAY SLUT*/
+
+  /* FONT */
+  .title {
+    font-family: "Gurajada", sans-serif;
+    font-size: 80px;
+    text-align: center;
+    color: rgb(139, 51, 51);
+    background-color: antiquewhite;
+  }
+
+  .single_image {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  .title a {
+    color: inherit; /* bevarer samme farve som .title */
+    text-decoration: none; /* fjerner understregningen */
+  }
+
+  p {
+    font-family: "Gurajada", sans-serif;
+    font-size: 50px;
+    color: rgb(139, 51, 51);
+    text-align: center;
+  }
+}
